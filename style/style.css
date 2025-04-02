@@ -21,6 +21,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 20px;
   padding: 10px 20px;
   background-color: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -36,7 +37,8 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  width: 100%;
+  gap: 0px;
 }
 
 .language-name {
@@ -64,7 +66,6 @@ nav {
   width: 30px;
   height: 30px;
   position: relative;
-  right: -10px;
 }
 
 .log-in {
@@ -98,16 +99,6 @@ nav {
   padding-left: 27px;
 }
 
-.search-bar-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0px;
-}
-
 #search-right {
   background-image: url("../img/Button - Searchevents.png");
   width: 300px;
@@ -121,4 +112,67 @@ nav {
   background-position: right center;
   background-size: 42px;
   padding-left: 30px;
+}
+
+@media screen and (max-width: 990px) {
+  #search-left {
+    max-width: 380px;
+    background-image: url("../img/Button - Searchevents.png");
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 42px;
+    padding-left: 30px;
+  }
+  #search-right {
+    display: none;
+  }
+  .nav {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .search-bar {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .search-bar {
+    width: 50%;
+    margin-top: 10px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0 auto;
+  }
+  .language-name {
+    font-size: 14px;
+  }
+  .sign-up {
+    margin-top: 10px;
+  }
+  #search-left {
+    width: 100%;
+    margin-top: 10px;
+    background-image: url("../img/Button - Searchevents.png");
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 42px;
+    padding-left: 30px;
+  }
+  #search-right {
+    display: none;
+  }
 }
