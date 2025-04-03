@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f0f0f0;
     color: #333;
 }
@@ -18,7 +18,6 @@ body{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     width: 100%;
-
 }
 .search-bar {
     display: flex;
@@ -35,21 +34,26 @@ body{
     background-position: left center; 
     background-size: 20px; 
     padding-left: 30px; 
+    border: none;
 }
 .user-info {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.language {
-    width: 30px;
-    height: 30px;
-    position: relative;
-}
 .log-in {
     border: none;
     text-decoration: none;
     font-weight: bold;
+    color: #000000;
+    padding: 7px 15px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.log-in:hover {
+    background-color: #000000;
+    color: white;
+    border-color: #fcfcfc;
 }
 .sign-up {
     background-color: #00798A;
@@ -59,6 +63,11 @@ body{
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+}
+.sign-up:hover {
+    background-color: #ffffff;
+    color: #00798A;
+    border-color: #fcfcfc;
 }
 #search-left {
     background-image: url('../img/Vector1.png'); 
@@ -140,6 +149,7 @@ main{
 }
 .footer-content {
     display: flex;
+    width: 60%;
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
@@ -258,8 +268,85 @@ main{
     width: 50%;
     height: auto;
 }
+.events{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+.events-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+.events-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+.events-header-description-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.events-description {
+    font-size: 18px;
+    color: #00798A;
+}
+.see-all-events {
+    background-color: #f0f0f0;
+    color: #00798A;
+    width: 125px;
+    height: 40px;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.see-all-events:hover {
+    background-color: #00798A;
+    color: #ffffff;
+    border-color: #fcfcfc;
+}
+.events-first-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    gap: 20px;
+}
+.event-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.event-image {
+    width: 278px;
+    height: 153px;
+    border-radius: 10px;
+    background-color: #ccc;
+}
+.event-title {
+    font-size: 18px;
+    font-weight: bold;
+}
 
 @media screen and (max-width: 990px){
+    .footer-content {
+        width: 100%;
+    }
     #search-left {
     max-width: 340px;
     width: 100%;
@@ -299,6 +386,27 @@ main{
         width: 80%;
         height: auto;
     }
+    .see-all-events {
+        display: none;
+    }
+    .events-first-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .event-card {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+    .event-image {
+        width: 220px;
+        height: 110px;
+    }
 }
 @media screen and (max-width: 768px) {
     .header {
@@ -306,7 +414,6 @@ main{
         align-items: center;
         gap: 10px;
     }
-
     .search-bar {
         width: 50%;
         margin-top: 10px;
@@ -361,5 +468,23 @@ main{
     .hero-image {
         width: 70%;
         height: auto;
+    }
+    .events-first-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .event-card {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+    .event-image {
+        width: 150px;
+        height: 75px;
     }
 }
