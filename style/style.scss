@@ -8,7 +8,7 @@ body{
     background-color: #f0f0f0;
     color: #333;
 }
-nav{
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,6 +18,7 @@ nav{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     width: 100%;
+
 }
 .search-bar {
     display: flex;
@@ -75,36 +76,159 @@ nav{
 }
 
 #search-right {
-    background-image: url('../img/Button - Searchevents.png'); 
     width: 300px;
     height: 42px;
     border: 1px solid #ccc;
-    border-radius: 10px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
     background-color: #fff;
-    background-repeat: no-repeat;
-    background-position: right center; 
-    background-size: 42px; 
     padding-left: 30px; 
 }
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+.wrapper > main{
+    flex: 1;
+}
+main{
+    width: 80%; 
+    margin: 0 auto; 
+    flex: 1; 
+    display: flex; 
+    flex-direction: column;
+
+}
+.header, .footer{
+    width: 100%;
+}
+.footer {
+    background-color: #2e3131;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 36px;
+    box-shadow: 6px 0px 19px 2px rgba(0,0,0,0.79);
+}
+.footer-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.get-started {
+    background-color: #2e3131;
+    color: white;
+    padding: 7px 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.get-started:hover {
+    background-color: #ffffff;
+    color: #2e3131;
+    border-color: #fcfcfc;
+}
+
+.border-footer {
+    border-top: 1px solid #fff;
+    margin: 10px;
+    width: 100%;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px ;
+    margin-top: 20px;
+}
+.footer-content-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+.footer-content-item-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+.footer-content-item li a {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #cbc8c8;
+    text-decoration: none;
+}
+.footer-social {
+    display: flex;
+    flex-direction: column;
+}
+.footer-social-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+.footer-social-media-links {
+    float: left;
+}
+.footer-downloud-links {
+    float: right;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    margin: 0;
+}
+
+.footer li {
+    display: inline;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #fff; 
+}
+
+.footer-bottom-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
 @media screen and (max-width: 990px){
     #search-left {
-    max-width: 380px;
-    background-image: url('../img/Button - Searchevents.png'); 
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    background-position: right center; 
-    background-size: 42px; 
-    padding-left: 30px; 
+    max-width: 340px;
+    width: 100%;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
     }
     #search-right {
         display: none;
     }
-    .nav{
+    .header{
         width: 100%;
         margin: 0 auto;
-        padding: 0 20px;
     }
     .search-bar {
         width: 100%;
@@ -112,7 +236,7 @@ nav{
     }
 }
 @media screen and (max-width: 768px) {
-    nav {
+    .header {
         flex-direction: column;
         align-items: center;
         gap: 10px;
@@ -131,16 +255,22 @@ nav{
         margin-top: 10px;
     }
     #search-left{
-        width: 100%;
-        margin-top: 10px;
-        background-image: url('../img/Button - Searchevents.png'); 
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    background-position: right center; 
-    background-size: 42px; 
-    padding-left: 30px; 
+    width: 100%;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
     }
     #search-right{
+        display: none;
+    }
+    .footer-bottom-container {
+        flex-direction: column;
+        text-align: flex-start;
+
+    }
+    .footer-links {
+        display: none;
+    }
+    .footer-downloud-links{
         display: none;
     }
 }
