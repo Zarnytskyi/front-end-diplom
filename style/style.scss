@@ -99,7 +99,6 @@ main{
     flex: 1; 
     display: flex; 
     flex-direction: column;
-
 }
 .header, .footer{
     width: 100%;
@@ -215,6 +214,50 @@ main{
     width: 100%;
     flex-wrap: wrap;
 }
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+}
+.hero-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+.hero-description {
+    font-size: 18px;
+    color: #555;
+}
+.join-meetup {
+    background-color: #00798A;
+    color: white;
+    width: 125px;
+    height: 40px;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.join-meetup:hover {
+    background-color: #ffffff;
+    color: #00798A;
+    border-color: #fcfcfc;
+}
+.hero-image {
+    width: 50%;
+    height: auto;
+}
 
 @media screen and (max-width: 990px){
     #search-left {
@@ -233,6 +276,28 @@ main{
     .search-bar {
         width: 100%;
         margin: 0 auto;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .hero-content {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-title {
+        font-size: 30px;
+        text-align: start;
+    }
+    .hero-description {
+        font-size: 16px;
+        text-align: start;
+    }
+    .hero-image {
+        width: 80%;
+        height: auto;
     }
 }
 @media screen and (max-width: 768px) {
@@ -272,5 +337,29 @@ main{
     }
     .footer-downloud-links{
         display: none;
+    }
+    main{
+        width: 100%;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-content {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-title {
+        font-size: 25px;
+        text-align: start;
+    }
+    .hero-description {
+        font-size: 12px;
+        text-align: start;
+    }
+    .hero-image {
+        width: 70%;
+        height: auto;
     }
 }

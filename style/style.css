@@ -310,6 +310,69 @@ main {
       flex-wrap: wrap;
 }
 
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+}
+
+.hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  width: 50%;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero-description {
+  font-size: 18px;
+  color: #555;
+}
+
+.join-meetup {
+  background-color: #00798A;
+  color: white;
+  width: 125px;
+  height: 40px;
+  border: none;
+  padding: 7px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.join-meetup:hover {
+  background-color: #ffffff;
+  color: #00798A;
+  border-color: #fcfcfc;
+}
+
+.hero-image {
+  width: 50%;
+  height: auto;
+}
+
 @media screen and (max-width: 990px) {
   #search-left {
     max-width: 340px;
@@ -327,6 +390,35 @@ main {
   .search-bar {
     width: 100%;
     margin: 0 auto;
+  }
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+  .hero-content {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 30px;
+    text-align: start;
+  }
+  .hero-description {
+    font-size: 16px;
+    text-align: start;
+  }
+  .hero-image {
+    width: 80%;
+    height: auto;
   }
 }
 @media screen and (max-width: 768px) {
@@ -374,5 +466,36 @@ main {
   }
   .footer-downloud-links {
     display: none;
+  }
+  main {
+    width: 100%;
+  }
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-content {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 25px;
+    text-align: start;
+  }
+  .hero-description {
+    font-size: 12px;
+    text-align: start;
+  }
+  .hero-image {
+    width: 70%;
+    height: auto;
   }
 }
