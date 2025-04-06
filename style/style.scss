@@ -73,7 +73,7 @@ body{
     background-image: url('../img/Vector1.png'); 
     background-repeat: no-repeat;
     background-position: left center; 
-    background-size: 20px; 
+    background-size: 17px; 
     width: 300px;
     height: 42px;
     border: 0.5px solid #ccc;
@@ -81,7 +81,9 @@ body{
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     background-color: #fff;
-    padding-left: 27px; 
+    padding-left: 30px;
+    background-position: 10px center;
+
 }
 
 #search-right {
@@ -372,14 +374,9 @@ main{
     font-size: 18px;
     font-weight: bold;
 }
-.sort-container {
-}
-.sort-button {
-}
-.right-img-container {
-}
+
 .right-img {
-    width: 100%;
+    width: 340px;
     height: auto;
     border-radius: 10px;
     background-color: #ccc;
@@ -445,8 +442,6 @@ main{
     padding-top: 20px;
     color: #8b8b8b;
     order: 1;
-}
-.event-type {
 }
 .events-card{
     display: flex;
@@ -524,6 +519,12 @@ main{
     .event-image {
         width: 220px;
         height: 110px;
+    }
+    .right-img-container{
+        display: none;
+    }
+    .sort-container select{
+        margin: 7px;
     }
 }
 @media screen and (max-width: 768px) {

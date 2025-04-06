@@ -81,8 +81,9 @@ const eventsStore = [
                     <p class="events-date">${event.date.toString()}</p>
                     <h3 class="event-title">${event.title}</h3>
                     <p class="event-details">${event.description}</p>
-                    <p class="event-category">${event.category}</p>
-                    <p class="event-distance">${event.distance} miles away</p>
+                    <div style="display: flex; align-items: center;">
+                    <p class="event-category">${event.category}</p><p class="event-distance">(${event.distance}km)</p>
+                    </div>
                     <p class="event-attendees">${event.attendees} attendees</p>
                     <p class="event-type">${event.type === "online" ? "Online" : "Offline"}</p>
                 </div>
