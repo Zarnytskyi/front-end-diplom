@@ -365,8 +365,6 @@ main{
     color: rgb(0, 0, 0);
     margin-top: 20px;
 }
-.events-second-title {
-}
 .see-events {
     border: none;
     text-decoration: underline;
@@ -455,6 +453,42 @@ main{
     border-top: 2px solid #ccc;
     margin: 10px 0;
     width: 100%;
+}
+.join-second-meetup {
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #97CAD114;
+    gap: 20px;
+    color: #000;
+}
+.join-second-meetup-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+.hidden-img {
+    display: none;
+}
+.join-second-meetup-image {
+    width: 341px;
+    height: 196px;
+}
+.join-second-meetup-button {
+    background-color: #E32359;
+    color: white;
+    width: 125px;
+    height: 40px;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 10px;
+}
+.join-second-meetup-button:hover {
+    background-color: #ffffff;
+    color: #E32359;
+    border-color: #fcfcfc;
 }
 @media screen and (max-width: 990px){
     .footer-content {
@@ -605,5 +639,28 @@ main{
     .event-image {
         width: 150px;
         height: 75px;
+    }
+    .join-second-meetup {
+        margin: 0 auto;
+    }
+    .join-second-meetup-content {
+        margin: 0 auto;
+    }
+    .join-second-meetup-title {
+        text-align: center;
+    }
+    .hidden-img {
+        display: block;
+    }
+    .join-second-meetup-image {
+    }
+    .join-second-meetup-description {
+        text-align: center;
+    }
+    .join-second-meetup-button {
+        margin: 0 auto;
+    }
+    .open-img {
+        display: none;
     }
 }

@@ -662,6 +662,57 @@ main {
   width: 100%;
 }
 
+.join-second-meetup {
+  padding: 30px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(151, 202, 209, 0.0784313725);
+  gap: 20px;
+  color: #000;
+}
+
+.join-second-meetup-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.hidden-img {
+  display: none;
+}
+
+.join-second-meetup-image {
+  width: 341px;
+  height: 196px;
+}
+
+.join-second-meetup-button {
+  background-color: #E32359;
+  color: white;
+  width: 125px;
+  height: 40px;
+  border: none;
+  padding: 7px 15px;
+  border-radius: 10px;
+}
+
+.join-second-meetup-button:hover {
+  background-color: #ffffff;
+  color: #E32359;
+  border-color: #fcfcfc;
+}
+
 @media screen and (max-width: 990px) {
   .footer-content {
     width: 100%;
@@ -854,5 +905,26 @@ main {
   .event-image {
     width: 150px;
     height: 75px;
+  }
+  .join-second-meetup {
+    margin: 0 auto;
+  }
+  .join-second-meetup-content {
+    margin: 0 auto;
+  }
+  .join-second-meetup-title {
+    text-align: center;
+  }
+  .hidden-img {
+    display: block;
+  }
+  .join-second-meetup-description {
+    text-align: center;
+  }
+  .join-second-meetup-button {
+    margin: 0 auto;
+  }
+  .open-img {
+    display: none;
   }
 }
