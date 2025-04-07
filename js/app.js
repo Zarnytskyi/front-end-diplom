@@ -76,6 +76,8 @@ const eventsStore = [
             eventCard.classList.add("events-card");
 
             eventCard.innerHTML = `
+                <div class="border"></div>
+                <div>
                 <img src="${event.image}" class="event-image">
                 <div class="event-description">
                     <p class="events-date">${event.date.toString()}</p>
@@ -86,6 +88,7 @@ const eventsStore = [
                     </div>
                     <p class="event-attendees">${event.attendees} attendees</p>
                     <p class="event-type">${event.type === "online" ? "Online" : "Offline"}</p>
+                </div>
                 </div>
             `;
 

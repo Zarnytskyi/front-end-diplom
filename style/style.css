@@ -646,14 +646,21 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 10px;
   background-color: #f0f0f0;
   color: rgb(0, 0, 0);
   margin-top: 20px;
+}
+
+.events-card div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
 }
 
 .border {
@@ -1145,30 +1152,6 @@ main {
   .hero-image {
     width: 70%;
     height: auto;
-  }
-  .events-first-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 20px;
-    padding: 0;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .event-card {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 20px;
-    width: 100%;
   }
   .event-image {
     width: 150px;
